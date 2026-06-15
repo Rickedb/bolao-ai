@@ -1,3 +1,5 @@
+import { buildFriendlies, isFriendlyId, appendToStage } from './build-context.js';
+
 const FIFA_API = 'https://api.fifa.com/api/v3';
 
 interface LocalizedStr {
@@ -35,7 +37,8 @@ interface Substitution {
 }
 
 interface TeamData {
-  IdTeam: string;
+  IdTeam?: string;
+  IdAssociation?: string;
   TeamName: LocalizedStr[];
   Tactics: string;
   Score: number;
@@ -201,6 +204,124 @@ async function fetchWeather(cityName: string, matchDate: Date): Promise<WeatherI
   }
 }
 
+// ── Team Form ─────────────────────────────────────────────────────────────────
+
+interface FormEntry {
+  IdMatch: string;
+  IdCompetition?: string;
+  IdSeason?: string;
+  IdStage?: string;
+}
+
+function tryParseFormEntry(e: unknown): FormEntry | null {
+  if (e == null || typeof e !== 'object') return null;
+  const o = e as Record<string, unknown>;
+
+  const str = (v: unknown) => typeof v === 'string' ? v : undefined;
+  const nested = (key: string) => (o[key] != null && typeof o[key] === 'object')
+    ? o[key] as Record<string, unknown>
+    : null;
+
+  const idMatch = str(o.IdMatch) ?? str(o.MatchId);
+  if (!idMatch) return null;
+
+  // Path components: try top-level, then common nested keys
+  const comp = nested('Competition') ?? nested('Stage') ?? o;
+  const idCompetition = str(o.IdCompetition) ?? str((comp as Record<string,unknown>).IdCompetition);
+  const idSeason      = str(o.IdSeason)      ?? str((comp as Record<string,unknown>).IdSeason);
+  const idStage       = str(o.IdStage)       ?? str((comp as Record<string,unknown>).IdStage);
+
+  return { IdMatch: idMatch, IdCompetition: idCompetition, IdSeason: idSeason, IdStage: idStage };
+}
+
+async function fetchTeamForm(teamId: string | undefined): Promise<FormEntry[]> {
+  if (!teamId) {
+    console.warn('  fetchTeamForm: teamId indefinido, ignorando');
+    return [];
+  }
+  const todayEnd = `${new Date().toISOString().slice(0, 10)}T23:59:59Z`;
+  const url = `${FIFA_API}/teamform/${teamId}?to=${encodeURIComponent(todayEnd)}&count=5&language=pt`;
+  console.log(`  GET ${url}`);
+  try {
+    const raw = await fetchJson<unknown>(url);
+    let list: unknown[];
+    if (Array.isArray(raw)) {
+      list = raw;
+    } else if (raw != null && typeof raw === 'object') {
+      const obj = raw as Record<string, unknown>;
+      list = (Array.isArray(obj.MatchesList) ? obj.MatchesList
+            : Array.isArray(obj.Results) ? obj.Results
+            : Array.isArray(obj.Matches) ? obj.Matches
+            : Array.isArray(obj.TeamForm) ? obj.TeamForm
+            : []) as unknown[];
+    } else {
+      list = [];
+    }
+
+    if (list.length === 0) {
+      console.warn(`  teamform/${teamId}: resposta vazia — ${JSON.stringify(raw).slice(0, 300)}`);
+      return [];
+    }
+
+    console.log(`  teamform/${teamId}: ${list.length} entradas — estrutura: ${JSON.stringify(list[0]).slice(0, 300)}`);
+    return list.map(tryParseFormEntry).filter((e): e is FormEntry => e !== null);
+  } catch (err) {
+    console.warn(`  teamform/${teamId}: erro — ${(err as Error).message}`);
+    return [];
+  }
+}
+
+// ── Save helpers ──────────────────────────────────────────────────────────────
+
+const slugify = (s: string) =>
+  s.normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/\s+/g, '_').replace(/[^a-zA-Z0-9_]/g, '');
+
+async function matchFileExists(idMatch: string): Promise<boolean> {
+  const { readdir } = await import('fs/promises');
+  const files = await readdir('output').catch(() => [] as string[]);
+  return files.some(f => f.startsWith(`${idMatch}-`));
+}
+
+async function extractAndSave(
+  idCompetition: string,
+  idSeason: string,
+  idStage: string,
+  idMatch: string,
+): Promise<{ live: LiveMatch; content: string }> {
+  const apiPath = `${idCompetition}/${idSeason}/${idStage}/${idMatch}`;
+
+  const [live, timeline] = await Promise.all([
+    fetchJson<LiveMatch>(`${FIFA_API}/live/football/${apiPath}?language=pt`),
+    fetchJson<Timeline>(`${FIFA_API}/timelines/${apiPath}?language=pt`).catch(() => null),
+  ]);
+
+  const idIFES = live.Properties?.IdIFES ?? null;
+  const matchDate = live.LocalDate ? new Date(live.LocalDate) : null;
+  const cityName = loc(live.Stadium?.CityName);
+
+  const [weather, fdhStats] = await Promise.all([
+    matchDate && cityName ? fetchWeather(cityName, matchDate) : Promise.resolve(null),
+    idIFES ? fetchFdhStats(idIFES) : Promise.resolve(null),
+  ]);
+
+  const content = formatMatch(live, timeline, weather, fdhStats);
+
+  const dt = live.LocalDate
+    ? new Date(live.LocalDate).toISOString().replace('T', '_').replace(/:/g, '-').slice(0, 16)
+    : 'unknown';
+  const home = slugify(loc(live.HomeTeam.TeamName));
+  const away = slugify(loc(live.AwayTeam.TeamName));
+  const fileName = `${idMatch}-${dt}-${home}_x_${away}.md`;
+
+  const { mkdir, writeFile } = await import('fs/promises');
+  await mkdir('output', { recursive: true });
+  const outFile = `output/${fileName}`;
+  await writeFile(outFile, content, 'utf-8');
+  console.log(`  Salvo: ${outFile}`);
+
+  return { live, content };
+}
+
 // ── Formatter ─────────────────────────────────────────────────────────────────
 
 function formatMatch(live: LiveMatch, timeline: Timeline | null, weather: WeatherInfo | null, fdhStats: FdhStats | null): string {
@@ -348,8 +469,8 @@ function formatMatch(live: LiveMatch, timeline: Timeline | null, weather: Weathe
 
   // Match stats
   if (fdhStats) {
-    const hs = fdhStats.teams[home.IdTeam] ?? [];
-    const as_ = fdhStats.teams[away.IdTeam] ?? [];
+    const hs = fdhStats.teams[home.IdTeam ?? ''] ?? [];
+    const as_ = fdhStats.teams[away.IdTeam ?? ''] ?? [];
 
     const header = () => {
       lines.push(`| Estatística | ${homeName} | ${awayName} |`);
@@ -520,39 +641,63 @@ async function main() {
   }
 
   const { idCompetition, idSeason, idStage, idMatch } = parseUrl(url);
-  const path = `${idCompetition}/${idSeason}/${idStage}/${idMatch}`;
+  console.log(`Extraindo partida principal ${idMatch}...`);
+  const { live: mainLive, content: mainContent } = await extractAndSave(idCompetition, idSeason, idStage, idMatch);
 
-  const [live, timeline] = await Promise.all([
-    fetchJson<LiveMatch>(`${FIFA_API}/live/football/${path}?language=pt`),
-    fetchJson<Timeline>(`${FIFA_API}/timelines/${path}?language=pt`).catch(() => null),
+  // Append official (non-friendly) main match to its stage file (e.g. primeira-fase.md)
+  if (!isFriendlyId(idMatch)) {
+    const stageName = loc(mainLive.StageName);
+    await appendToStage(stageName, idMatch, mainContent);
+  }
+
+  // Fetch recent form for both teams in parallel
+  const homeTeamId = mainLive.HomeTeam.IdTeam ?? (mainLive.HomeTeam as unknown as Record<string, string>).IdAssociation;
+  const awayTeamId = mainLive.AwayTeam.IdTeam ?? (mainLive.AwayTeam as unknown as Record<string, string>).IdAssociation;
+  console.log(`\nBuscando forma recente: home=${homeTeamId} away=${awayTeamId}`);
+  const [homeForm, awayForm] = await Promise.all([
+    fetchTeamForm(homeTeamId),
+    fetchTeamForm(awayTeamId),
   ]);
 
-  const idIFES = live.Properties?.IdIFES ?? null;
-  const matchDate = live.LocalDate ? new Date(live.LocalDate) : null;
-  const cityName = loc(live.Stadium?.CityName);
+  // Deduplicate form entries, skipping the already-saved main match
+  const seen = new Set<string>([idMatch]);
+  const formEntries: FormEntry[] = [];
+  for (const entry of [...homeForm, ...awayForm]) {
+    if (!seen.has(entry.IdMatch)) {
+      seen.add(entry.IdMatch);
+      formEntries.push(entry);
+    }
+  }
 
-  const [weather, fdhStats] = await Promise.all([
-    matchDate && cityName ? fetchWeather(cityName, matchDate) : Promise.resolve(null),
-    idIFES ? fetchFdhStats(idIFES) : Promise.resolve(null),
-  ]);
+  const savedIds: string[] = [idMatch];
+  if (formEntries.length > 0) {
+    console.log(`\nProcessando ${formEntries.length} jogos de forma recente...`);
+    for (const entry of formEntries) {
+      // Fall back to main match path components when form entry is missing them
+      const comp   = entry.IdCompetition ?? idCompetition;
+      const season = entry.IdSeason      ?? idSeason;
+      const stage  = entry.IdStage       ?? idStage;
 
-  const content = formatMatch(live, timeline, weather, fdhStats);
+      console.log(`  ${entry.IdMatch} (${comp}/${season}/${stage})`);
 
-  const slugify = (s: string) =>
-    s.normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/\s+/g, '_').replace(/[^a-zA-Z0-9_]/g, '');
+      if (await matchFileExists(entry.IdMatch)) {
+        console.log(`    Já existe — ignorando`);
+        continue;
+      }
+      try {
+        await extractAndSave(comp, season, stage, entry.IdMatch);
+        savedIds.push(entry.IdMatch);
+      } catch (err) {
+        console.warn(`    Erro: ${(err as Error).message}`);
+      }
+      await new Promise(r => setTimeout(r, 500));
+    }
+  }
 
-  const dt = live.LocalDate
-    ? new Date(live.LocalDate).toISOString().replace('T', '_').replace(/:/g, '-').slice(0, 16)
-    : 'unknown';
-  const home = slugify(loc(live.HomeTeam.TeamName));
-  const away = slugify(loc(live.AwayTeam.TeamName));
-  const fileName = `${idMatch}-${dt}-${home}_x_${away}.md`;
-
-  const fs = await import('fs/promises');
-  await fs.mkdir('output', { recursive: true });
-  const outFile = `output/${fileName}`;
-  await fs.writeFile(outFile, content, 'utf-8');
-  console.log(`Salvo em ${outFile}`);
+  if (savedIds.some(id => isFriendlyId(id))) {
+    console.log('\nAtualizando amistosos por confederação...');
+    await buildFriendlies();
+  }
 }
 
 main().catch(err => {
