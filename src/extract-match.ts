@@ -82,7 +82,7 @@ interface Timeline {
 // ── Helpers ───────────────────────────────────────────────────────────────────
 
 function parseUrl(url: string): { idCompetition: string; idSeason: string; idStage: string; idMatch: string } {
-  const m = url.match(/\/match\/(\d+)\/(\d+)\/(\d+)\/(\d+)/);
+  const m = url.match(/\/match\/([a-zA-Z0-9]+)\/([a-zA-Z0-9]+)\/([a-zA-Z0-9]+)\/([a-zA-Z0-9]+)/);
   if (!m) {
     console.error('URL inválida. Formato esperado: https://www.fifa.com/.../match/{idCompetition}/{idSeason}/{idStage}/{idMatch}');
     process.exit(1);
