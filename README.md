@@ -30,7 +30,7 @@
 
 # Histórico de Palpites
 
-## Rodada 1 — Copa do Mundo FIFA 2026 (11–14 de junho)
+## Primeira fase — Copa do Mundo FIFA 2026
 
 | Jogo | Palpite | Resultado Real | Acerto Resultado | Gols Casa | Gols Fora | Placar Exato |
 | ---- | ------- | -------------- | :--------------: | :-------: | :-------: | :----------: |
@@ -44,8 +44,16 @@
 | Qatar x Suíça | Suíça 2 x 0 | **Catar 1 x 1 Suíça** | ❌ | ❌ (1≠0) | ❌ (1≠2) | ❌ |
 | Alemanha x Curaçao | Alemanha 3 x 0 | **Alemanha 7 x 1** | ✅ | ❌ (7≠3) | ❌ (1≠0) | ❌ |
 | Holanda x Japão | Holanda 2 x 1 | **Holanda 2 x 2 Japão** | ❌ | ✅ (2) | ❌ (2≠1) | ❌ |
-| Costa do Marfim x Equador | Equador 2 x 1 | *(aguardando)* | — | — | — | — |
-| Suécia x Tunísia | Suécia 1 x 0 | *(aguardando)* | — | — | — | — |
+| Costa do Marfim x Equador | Equador 2 x 1 | **Costa do Marfim 1 x 0** | ❌ | ✅ (1) | ❌ (0≠2) | ❌ |
+| Suécia x Tunísia | Suécia 1 x 0 | **Suécia 5 x 1** | ✅ | ❌ (5≠1) | ❌ (1≠0) | ❌ |
+| Espanha x Cabo Verde | Espanha 2 x 0 | **Espanha 0 x 0** | ❌ | ❌ (0≠2) | ✅ (0) | ❌ |
+| Bélgica x Egito | Bélgica 2 x 1 | **Bélgica 1 x 1** | ❌ | ❌ (1≠2) | ✅ (1) | ❌ |
+| Arábia Saudita x Uruguai | Uruguai 2 x 0 | **Arábia Saudita 1 x 1** | ❌ | ❌ (1≠0) | ❌ (1≠2) | ❌ |
+| Irã x Nova Zelândia | Irã 1 x 0 | **Irã 2 x 2** | ❌ | ❌ (2≠1) | ❌ (2≠0) | ❌ |
+| França x Senegal | França 2 x 1 | *(aguardando)* | — | — | — | — |
+| Iraque x Noruega | Noruega 2 x 0 | *(aguardando)* | — | — | — | — |
+| Argentina x Argélia | Argentina 2 x 0 | *(aguardando)* | — | — | — | — |
+| Áustria x Jordânia | Áustria 1 x 0 | *(aguardando)* | — | — | — | — |
 
 ---
 
@@ -53,9 +61,9 @@
 
 | Critério | Acertos | Total | **%** |
 | -------- | :-----: | :---: | :---: |
-| Acerto de Resultado (V/E/D) | 5 | 10 | **50%** |
-| Acerto de Gols (por time) | 5 | 20 | **25%** |
-| Placar Exato (combinado) | 0 | 10 | **0%** |
+| Acerto de Resultado (V/E/D) | 6 | 16 | **38%** |
+| Acerto de Gols (por time) | 8 | 32 | **25%** |
+| Placar Exato (combinado) | 0 | 16 | **0%** |
 
 > **Metodologia:**
 > - **Acerto de Resultado**: acertou se o time vencedor (ou empate) coincide com o palpite.
