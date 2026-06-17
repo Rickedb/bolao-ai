@@ -38,11 +38,11 @@ for i in "${!urls[@]}"; do
   echo "Processando: $url"
   npx tsx src/extract-match.ts "$url"
 
-  if [[ "$i" -lt $(( ${#urls[@]} - 1 )) ]]; then
-    delay_min=$(( (RANDOM % 3) + 1 ))
-    echo "Aguardando $delay_min minuto(s) antes da proxima execucao..."
-    sleep "$(( delay_min * 60 ))"
-  fi
+  #if [[ "$i" -lt $(( ${#urls[@]} - 1 )) ]]; then
+    #delay_min=$(( (RANDOM % 3) + 1 ))
+    #echo "Aguardando $delay_min minuto(s) antes da proxima execucao..."
+    #sleep "$(( delay_min * 60 ))"
+  #fi
 done
 
 echo "Concluido."

@@ -50,8 +50,8 @@
 | Bélgica x Egito | Bélgica 2 x 1 | **Bélgica 1 x 1** | ❌ | ❌ (1≠2) | ✅ (1) | ❌ |
 | Arábia Saudita x Uruguai | Uruguai 2 x 0 | **Arábia Saudita 1 x 1** | ❌ | ❌ (1≠0) | ❌ (1≠2) | ❌ |
 | Irã x Nova Zelândia | Irã 1 x 0 | **Irã 2 x 2** | ❌ | ❌ (2≠1) | ❌ (2≠0) | ❌ |
-| França x Senegal | França 2 x 1 | *(aguardando)* | — | — | — | — |
-| Iraque x Noruega | Noruega 2 x 0 | *(aguardando)* | — | — | — | — |
+| França x Senegal | França 2 x 1 | **França 3 x 1** | ✅ | ❌ (3≠2) | ✅ (1) | ❌ |
+| Iraque x Noruega | Noruega 2 x 0 | **Iraque 1 x 4** | ✅ | ❌ (1≠0) | ❌ (4≠2) | ❌ |
 | Argentina x Argélia | Argentina 2 x 0 | *(aguardando)* | — | — | — | — |
 | Áustria x Jordânia | Áustria 1 x 0 | *(aguardando)* | — | — | — | — |
 
@@ -61,9 +61,9 @@
 
 | Critério | Acertos | Total | **%** |
 | -------- | :-----: | :---: | :---: |
-| Acerto de Resultado (V/E/D) | 6 | 16 | **38%** |
-| Acerto de Gols (por time) | 8 | 32 | **25%** |
-| Placar Exato (combinado) | 0 | 16 | **0%** |
+| Acerto de Resultado (V/E/D) | 8 | 18 | **44%** |
+| Acerto de Gols (por time) | 9 | 36 | **25%** |
+| Placar Exato (combinado) | 0 | 18 | **0%** |
 
 > **Metodologia:**
 > - **Acerto de Resultado**: acertou se o time vencedor (ou empate) coincide com o palpite.
