@@ -52,8 +52,12 @@
 | Irã x Nova Zelândia | Irã 1 x 0 | **Irã 2 x 2** | ❌ | ❌ (2≠1) | ❌ (2≠0) | ❌ |
 | França x Senegal | França 2 x 1 | **França 3 x 1** | ✅ | ❌ (3≠2) | ✅ (1) | ❌ |
 | Iraque x Noruega | Noruega 2 x 0 | **Iraque 1 x 4** | ✅ | ❌ (1≠0) | ❌ (4≠2) | ❌ |
-| Argentina x Argélia | Argentina 2 x 0 | *(aguardando)* | — | — | — | — |
-| Áustria x Jordânia | Áustria 1 x 0 | *(aguardando)* | — | — | — | — |
+| Argentina x Argélia | Argentina 2 x 0 | **Argentina 3 x 0** | ✅ | ❌ (3≠2) | ✅ (0) | ❌ |
+| Áustria x Jordânia | Áustria 1 x 0 | **Áustria 3 x 1** | ✅ | ❌ (3≠1) | ❌ (1≠0) | ❌ |
+| Portugal x RD Congo | Portugal 2 x 0 | **Portugal 1 x 1** | ❌ | ❌ (1≠2) | ❌ (1≠0) | ❌ |
+| Inglaterra x Croácia | Inglaterra 2 x 1 | *(aguardando)* | — | — | — | — |
+| Gana x Panamá | Gana 1 x 0 | *(aguardando)* | — | — | — | — |
+| Uzbequistão x Colômbia | Colômbia 2 x 1 | *(aguardando)* | — | — | — | — |
 
 ---
 
@@ -61,9 +65,9 @@
 
 | Critério | Acertos | Total | **%** |
 | -------- | :-----: | :---: | :---: |
-| Acerto de Resultado (V/E/D) | 8 | 18 | **44%** |
-| Acerto de Gols (por time) | 9 | 36 | **25%** |
-| Placar Exato (combinado) | 0 | 18 | **0%** |
+| Acerto de Resultado (V/E/D) | 10 | 21 | **48%** |
+| Acerto de Gols (por time) | 10 | 42 | **24%** |
+| Placar Exato (combinado) | 0 | 21 | **0%** |
 
 > **Metodologia:**
 > - **Acerto de Resultado**: acertou se o time vencedor (ou empate) coincide com o palpite.
