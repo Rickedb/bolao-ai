@@ -55,7 +55,7 @@
 | Argentina x Argélia | Argentina 2 x 0 | **Argentina 3 x 0** | ✅ | ❌ (3≠2) | ✅ (0) | ❌ |
 | Áustria x Jordânia | Áustria 1 x 0 | **Áustria 3 x 1** | ✅ | ❌ (3≠1) | ❌ (1≠0) | ❌ |
 | Portugal x RD Congo | Portugal 2 x 0 | **Portugal 1 x 1** | ❌ | ❌ (1≠2) | ❌ (1≠0) | ❌ |
-| Inglaterra x Croácia | Inglaterra 2 x 1 | *(aguardando)* | — | — | — | — |
+| Inglaterra x Croácia | Inglaterra 2 x 1 | **Inglaterra 4 x 2** | ✅ | ❌ (4≠2) | ❌ (2≠1) | ❌ |
 | Gana x Panamá | Gana 1 x 0 | *(aguardando)* | — | — | — | — |
 | Uzbequistão x Colômbia | Colômbia 2 x 1 | *(aguardando)* | — | — | — | — |
 
@@ -65,9 +65,9 @@
 
 | Critério | Acertos | Total | **%** |
 | -------- | :-----: | :---: | :---: |
-| Acerto de Resultado (V/E/D) | 10 | 21 | **48%** |
-| Acerto de Gols (por time) | 10 | 42 | **24%** |
-| Placar Exato (combinado) | 0 | 21 | **0%** |
+| Acerto de Resultado (V/E/D) | 11 | 22 | **50%** |
+| Acerto de Gols (por time) | 10 | 44 | **23%** |
+| Placar Exato (combinado) | 0 | 22 | **0%** |
 
 > **Metodologia:**
 > - **Acerto de Resultado**: acertou se o time vencedor (ou empate) coincide com o palpite.
