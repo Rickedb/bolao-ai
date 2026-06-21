@@ -61,13 +61,13 @@
 | Tchéquia x África do Sul | 18/06 09:00 | Tchéquia 2 x 1 | **Tchéquia 1 x 1** | ❌ | ❌ (1≠2) | ✅ (1) | ❌ |
 | Suíça x Bósnia e Herzegovina | 18/06 09:00 | Suíça 1 x 1 | **Suíça 4 x 1 Bósnia e Herzegovina** | ❌ | ❌ (4≠1) | ✅ (1) | ❌ |
 | Canadá x Catar | 18/06 12:00 | Canadá 2 x 1 | **Canadá 6 x 0 Catar** | ✅ | ❌ (6≠2) | ❌ (0≠1) | ❌ |
-| México x Coreia do Sul | *(aguardando)* | México 2 x 1 | *(aguardando)* | — | — | — | — |
-| EUA x Austrália | *(aguardando)* | EUA 2 x 1 | *(aguardando)* | — | — | — | — |
-| Escócia x Marrocos | *(aguardando)* | Escócia 1 x 1 | *(aguardando)* | — | — | — | — |
-| Brasil x Haiti | *(aguardando)* | Brasil 2 x 0 | *(aguardando)* | — | — | — | — |
-| Turquia x Paraguai | *(aguardando)* | Turquia 2 x 1 | *(aguardando)* | — | — | — | — |
-| Holanda x Suécia | *(aguardando)* | Holanda 1 x 1 | *(aguardando)* | — | — | — | — |
-| Alemanha x Costa do Marfim | *(aguardando)* | Alemanha 2 x 0 | *(aguardando)* | — | — | — | — |
+| México x Coreia do Sul | 18/06 16:00 | México 2 x 1 | **México 1 x 0** | ✅ | ❌ (1≠2) | ❌ (0≠1) | ❌ |
+| EUA x Austrália | 19/06 09:00 | EUA 2 x 1 | **EUA 2 x 0** | ✅ | ✅ (2) | ❌ (0≠1) | ❌ |
+| Escócia x Marrocos | 19/06 15:00 | Escócia 1 x 1 | **Escócia 0 x 1 Marrocos** | ❌ | ❌ (0≠1) | ✅ (1) | ❌ |
+| Brasil x Haiti | 19/06 17:30 | Brasil 2 x 0 | **Brasil 3 x 0** | ✅ | ❌ (3≠2) | ✅ (0) | ❌ |
+| Turquia x Paraguai | 19/06 17:00 | Turquia 2 x 1 | **Turquia 0 x 1 Paraguai** | ❌ | ❌ (0≠2) | ✅ (1) | ❌ |
+| Holanda x Suécia | 20/06 09:00 | Holanda 1 x 1 | **Holanda 5 x 1** | ❌ | ❌ (5≠1) | ✅ (1) | ❌ |
+| Alemanha x Costa do Marfim | 20/06 13:00 | Alemanha 2 x 0 | **Alemanha 2 x 1** | ✅ | ✅ (2) | ❌ (1≠0) | ❌ |
 | Equador x Curaçao | *(aguardando)* | Equador 2 x 0 | *(aguardando)* | — | — | — | — |
 | Tunísia x Japão | *(aguardando)* | Japão 1 x 0 | *(aguardando)* | — | — | — | — |
 | Espanha x Arábia Saudita | *(aguardando)* | Espanha 2 x 0 | *(aguardando)* | — | — | — | — |
@@ -81,9 +81,9 @@
 
 | Critério | Acertos | Total | **%** |
 | -------- | :-----: | :---: | :---: |
-| Acerto de Resultado (V/E/D) | 14 | 27 | **52%** |
-| Acerto de Gols (por time) | 15 | 54 | **28%** |
-| Placar Exato (cravado) | 1 | 27 | **4%** |
+| Acerto de Resultado (V/E/D) | 18 | 34 | **53%** |
+| Acerto de Gols (por time) | 21 | 68 | **31%** |
+| Placar Exato (cravado) | 1 | 34 | **3%** |
 
 > **Metodologia:**
 > - **Acerto de Resultado**: acertou se o time vencedor (ou empate) coincide com o palpite.
