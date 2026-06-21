@@ -29,14 +29,14 @@
 
 ## Referência de Calibração
 
-| Faixa | Perfil |
-|-------|--------|
-| 90–100 | Elite mundial (Argentina, França, Brasil potencial, Alemanha, Espanha, Portugal, Inglaterra) |
-| 75–89 | Muito forte (Holanda, Bélgica, Uruguai, Marrocos, EUA, Noruega, Colômbia, México, Suíça) |
-| 60–74 | Sólido (Japão, Croácia, Turquia, Áustria, Equador, Argélia, Gana, Costa do Marfim, Canadá, Escócia, Irã, Coreia do Sul) |
-| 45–59 | Intermediário (Uzbequistão, RD Congo, Austrália, Paraguai, Cabo Verde, Iraque, Arábia Saudita, Bósnia) |
-| 30–44 | Inferior (Qatar, África do Sul, Tunísia, Nova Zelândia, Jordânia) |
-| 15–29 | Fraco (Haiti, Curação, Panamá) |
+| Score | Perfil | Times |
+|-------|--------|-------|
+| 90–100 | Elite mundial | Argentina, França, Brasil, Alemanha, Espanha, Portugal, Inglaterra |
+| 75–89 | Muito forte | Holanda, Bélgica, Uruguai, Marrocos, EUA, Noruega, Colômbia, México, Suíça |
+| 60–74 | Sólido | Japão, Croácia, Turquia, Áustria, Equador, Argélia, Gana, Costa do Marfim, Canadá, Escócia, Irã, Coreia do Sul |
+| 45–59 | Intermediário | Uzbequistão, RD Congo, Austrália, Paraguai, Cabo Verde, Iraque, Arábia Saudita, Bósnia |
+| 30–44 | Inferior | Qatar, África do Sul, Tunísia, Nova Zelândia, Jordânia |
+| 15–29 | Fraco | Haiti, Curação, Panamá |
 
 ---
 
