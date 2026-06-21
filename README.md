@@ -27,13 +27,20 @@
 
 ---
 
-## Referência de Calibração
+## Calibração de desempenho dos times
+
+Calibração de desempenho dos times de 0 a 100, onde 0 é a pior nota e 100 a melhor nota, conforme a metodologia:
+
+- 50% — Resultados atuais da copa (pontuação, gols esperados, qualidade do oponente)
+- 25% — Resultados de amistosos pré copa
+- 15% — Qualidade do time e jogadores chave
+- 10% — Dados de performance (posse de bola, chutes a gol, gols esperados)
 
 | Score | Perfil | Times |
 |-------|--------|-------|
 | 90–100 | Elite mundial | Argentina (94), França (91), Alemanha (88), Espanha (86), Inglaterra (84), Holanda (83), Portugal (80) |
-| 75–89 | Muito forte | Brasil (79), Noruega (78), EUA (76) |
-| 60–74 | Sólido | Bélgica (74), Colômbia (74), Uruguai (74), Marrocos (73), México (72), Áustria (70), Canadá (70), Suíça (68), Japão (68), Suécia (66), Coreia do Sul (64), Costa do Marfim (63), Turquia (62), Croácia (62), Senegal (62), Egito (61) |
+| 75–89 | Muito forte | Brasil (79), Noruega (78), Japão (75), EUA (76) |
+| 60–74 | Sólido | Bélgica (74), Colômbia (74), Uruguai (74), Marrocos (73), México (72), Áustria (70), Canadá (70), Suíça (68), Suécia (66), Coreia do Sul (64), Costa do Marfim (63), Turquia (62), Croácia (62), Senegal (62), Egito (61) |
 | 45–59 | Intermediário | Austrália (58), Escócia (57), Equador (55), Gana (54), Argélia (53), Tchequia (52), Irã (50), RD Congo (49), Paraguai (48), Arábia Saudita (47) |
 | 30–44 | Inferior | Bósnia (44), Uzbequistão (42), Cabo Verde (40), África do Sul (38), Iraque (37), Nova Zelândia (35), Tunísia (33), Jordânia (33), Panamá (31) |
 | 15–29 | Fraco | Qatar (22), Haiti (21), Curação (17) |
