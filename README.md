@@ -31,12 +31,12 @@
 
 | Score | Perfil | Times |
 |-------|--------|-------|
-| 90–100 | Elite mundial | Argentina, França, Brasil, Alemanha, Espanha, Portugal, Inglaterra |
-| 75–89 | Muito forte | Holanda, Bélgica, Uruguai, Marrocos, EUA, Noruega, Colômbia, México, Suíça |
-| 60–74 | Sólido | Japão, Croácia, Turquia, Áustria, Equador, Argélia, Gana, Costa do Marfim, Canadá, Escócia, Irã, Coreia do Sul |
-| 45–59 | Intermediário | Uzbequistão, RD Congo, Austrália, Paraguai, Cabo Verde, Iraque, Arábia Saudita, Bósnia |
-| 30–44 | Inferior | Qatar, África do Sul, Tunísia, Nova Zelândia, Jordânia |
-| 15–29 | Fraco | Haiti, Curação, Panamá |
+| 90–100 | Elite mundial | Argentina (94), França (91), Alemanha (88), Espanha (86), Inglaterra (84), Holanda (83), Portugal (80) |
+| 75–89 | Muito forte | Brasil (79), Noruega (78), EUA (76) |
+| 60–74 | Sólido | Bélgica (74), Colômbia (74), Uruguai (74), Marrocos (73), México (72), Áustria (70), Canadá (70), Suíça (68), Japão (68), Suécia (66), Coreia do Sul (64), Costa do Marfim (63), Turquia (62), Croácia (62), Senegal (62), Egito (61) |
+| 45–59 | Intermediário | Austrália (58), Escócia (57), Equador (55), Gana (54), Argélia (53), Tchequia (52), Irã (50), RD Congo (49), Paraguai (48), Arábia Saudita (47) |
+| 30–44 | Inferior | Bósnia (44), Uzbequistão (42), Cabo Verde (40), África do Sul (38), Iraque (37), Nova Zelândia (35), Tunísia (33), Jordânia (33), Panamá (31) |
+| 15–29 | Fraco | Qatar (22), Haiti (21), Curação (17) |
 
 ---
 
