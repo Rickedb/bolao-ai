@@ -87,12 +87,16 @@ Calibração de desempenho dos times de 0 a 100, onde 0 é a pior nota e 100 a m
 | Turquia x Paraguai | 19/06 17:00 | Turquia 2 x 1 | **Turquia 0 x 1 Paraguai** | ❌ | ❌ (0≠2) | ✅ (1) | ❌ |
 | Holanda x Suécia | 20/06 09:00 | Holanda 1 x 1 | **Holanda 5 x 1** | ❌ | ❌ (5≠1) | ✅ (1) | ❌ |
 | Alemanha x Costa do Marfim | 20/06 13:00 | Alemanha 2 x 0 | **Alemanha 2 x 1** | ✅ | ✅ (2) | ❌ (1≠0) | ❌ |
-| Equador x Curaçao | *(aguardando)* | Equador 2 x 0 | *(aguardando)* | — | — | — | — |
-| Tunísia x Japão | *(aguardando)* | Japão 1 x 0 | *(aguardando)* | — | — | — | — |
-| Espanha x Arábia Saudita | *(aguardando)* | Espanha 2 x 0 | *(aguardando)* | — | — | — | — |
-| Bélgica x Irã | *(aguardando)* | Bélgica 2 x 1 | *(aguardando)* | — | — | — | — |
-| Uruguai x Cabo Verde | *(aguardando)* | Uruguai 1 x 0 | *(aguardando)* | — | — | — | — |
+| Equador x Curaçao | 20/06 16:00 | Equador 2 x 0 | **Equador 0 x 0 Curaçao** | ❌ | ❌ (0≠2) | ✅ (0) | ❌ |
+| Tunísia x Japão | 20/06 19:00 | Japão 1 x 0 | **Tunísia 0 x 4 Japão** | ✅ | ✅ (0) | ❌ (4≠1) | ❌ |
+| Espanha x Arábia Saudita | 21/06 09:00 | Espanha 2 x 0 | **Espanha 4 x 0** | ✅ | ❌ (4≠2) | ✅ (0) | ❌ |
+| Bélgica x Irã | 21/06 09:00 | Bélgica 2 x 1 | **Bélgica 0 x 0 Irã** | ❌ | ❌ (0≠2) | ❌ (0≠1) | ❌ |
+| Uruguai x Cabo Verde | 21/06 15:00 | Uruguai 1 x 0 | **Uruguai 2 x 2 Cabo Verde** | ❌ | ❌ (2≠1) | ❌ (2≠0) | ❌ |
 | Nova Zelândia x Egito | *(aguardando)* | Egito 2 x 1 | *(aguardando)* | — | — | — | — |
+| Argentina x Áustria | *(aguardando)* | Argentina 2 x 0 | *(aguardando)* | — | — | — | — |
+| França x Iraque | *(aguardando)* | França 3 x 0 | *(aguardando)* | — | — | — | — |
+| Noruega x Senegal | *(aguardando)* | Noruega 2 x 0 | *(aguardando)* | — | — | — | — |
+| Jordânia x Argélia | *(aguardando)* | Argélia 1 x 0 | *(aguardando)* | — | — | — | — |
 
 ---
 
@@ -100,9 +104,9 @@ Calibração de desempenho dos times de 0 a 100, onde 0 é a pior nota e 100 a m
 
 | Critério | Acertos | Total | **%** |
 | -------- | :-----: | :---: | :---: |
-| Acerto de Resultado (V/E/D) | 18 | 34 | **53%** |
-| Acerto de Gols (por time) | 21 | 68 | **31%** |
-| Placar Exato (cravado) | 1 | 34 | **3%** |
+| Acerto de Resultado (V/E/D) | 20 | 39 | **51%** |
+| Acerto de Gols (por time) | 24 | 78 | **31%** |
+| Placar Exato (cravado) | 1 | 39 | **3%** |
 
 > **Metodologia:**
 > - **Acerto de Resultado**: acertou se o time vencedor (ou empate) coincide com o palpite.
