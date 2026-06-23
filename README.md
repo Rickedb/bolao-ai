@@ -92,11 +92,15 @@ Calibração de desempenho dos times de 0 a 100, onde 0 é a pior nota e 100 a m
 | Espanha x Arábia Saudita | 21/06 09:00 | Espanha 2 x 0 | **Espanha 4 x 0** | ✅ | ❌ (4≠2) | ✅ (0) | ❌ |
 | Bélgica x Irã | 21/06 09:00 | Bélgica 2 x 1 | **Bélgica 0 x 0 Irã** | ❌ | ❌ (0≠2) | ❌ (0≠1) | ❌ |
 | Uruguai x Cabo Verde | 21/06 15:00 | Uruguai 1 x 0 | **Uruguai 2 x 2 Cabo Verde** | ❌ | ❌ (2≠1) | ❌ (2≠0) | ❌ |
-| Nova Zelândia x Egito | *(aguardando)* | Egito 2 x 1 | *(aguardando)* | — | — | — | — |
-| Argentina x Áustria | *(aguardando)* | Argentina 2 x 0 | *(aguardando)* | — | — | — | — |
+| Nova Zelândia x Egito | 21/06 15:00 | Egito 2 x 1 | **Nova Zelândia 1 x 3 Egito** | ✅ | ✅ (1) | ❌ (3≠2) | ❌ |
+| Argentina x Áustria | 22/06 09:00 | Argentina 2 x 0 | **Argentina 2 x 0** | ✅ | ✅ (2) | ✅ (0) | ✅ |
 | França x Iraque | *(aguardando)* | França 3 x 0 | *(aguardando)* | — | — | — | — |
 | Noruega x Senegal | *(aguardando)* | Noruega 2 x 0 | *(aguardando)* | — | — | — | — |
 | Jordânia x Argélia | *(aguardando)* | Argélia 1 x 0 | *(aguardando)* | — | — | — | — |
+| Portugal x Uzbequistão | *(aguardando)* | Portugal 2 x 0 | *(aguardando)* | — | — | — | — |
+| Colômbia x Rep. Dem. do Congo | *(aguardando)* | Colômbia 2 x 0 | *(aguardando)* | — | — | — | — |
+| Inglaterra x Gana | *(aguardando)* | Inglaterra 2 x 0 | *(aguardando)* | — | — | — | — |
+| Panamá x Croácia | *(aguardando)* | Croácia 1 x 0 | *(aguardando)* | — | — | — | — |
 
 ---
 
@@ -104,9 +108,9 @@ Calibração de desempenho dos times de 0 a 100, onde 0 é a pior nota e 100 a m
 
 | Critério | Acertos | Total | **%** |
 | -------- | :-----: | :---: | :---: |
-| Acerto de Resultado (V/E/D) | 20 | 39 | **51%** |
-| Acerto de Gols (por time) | 24 | 78 | **31%** |
-| Placar Exato (cravado) | 1 | 39 | **3%** |
+| Acerto de Resultado (V/E/D) | 22 | 41 | **54%** |
+| Acerto de Gols (por time) | 27 | 82 | **33%** |
+| Placar Exato (cravado) | 2 | 41 | **5%** |
 
 > **Metodologia:**
 > - **Acerto de Resultado**: acertou se o time vencedor (ou empate) coincide com o palpite.
