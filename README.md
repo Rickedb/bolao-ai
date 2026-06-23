@@ -94,9 +94,9 @@ Calibração de desempenho dos times de 0 a 100, onde 0 é a pior nota e 100 a m
 | Uruguai x Cabo Verde | 21/06 15:00 | Uruguai 1 x 0 | **Uruguai 2 x 2 Cabo Verde** | ❌ | ❌ (2≠1) | ❌ (2≠0) | ❌ |
 | Nova Zelândia x Egito | 21/06 15:00 | Egito 2 x 1 | **Nova Zelândia 1 x 3 Egito** | ✅ | ✅ (1) | ❌ (3≠2) | ❌ |
 | Argentina x Áustria | 22/06 09:00 | Argentina 2 x 0 | **Argentina 2 x 0** | ✅ | ✅ (2) | ✅ (0) | ✅ |
-| França x Iraque | *(aguardando)* | França 3 x 0 | *(aguardando)* | — | — | — | — |
-| Noruega x Senegal | *(aguardando)* | Noruega 2 x 0 | *(aguardando)* | — | — | — | — |
-| Jordânia x Argélia | *(aguardando)* | Argélia 1 x 0 | *(aguardando)* | — | — | — | — |
+| França x Iraque | 22/06 14:00 | França 3 x 0 | **França 3 x 0** | ✅ | ✅ (3) | ✅ (0) | ✅ |
+| Noruega x Senegal | 22/06 17:00 | Noruega 2 x 0 | **Noruega 3 x 2** | ✅ | ❌ (3≠2) | ❌ (2≠0) | ❌ |
+| Jordânia x Argélia | 22/06 17:00 | Argélia 1 x 0 | **Jordânia 1 x 2 Argélia** | ✅ | ❌ (1≠0) | ❌ (2≠1) | ❌ |
 | Portugal x Uzbequistão | *(aguardando)* | Portugal 2 x 0 | *(aguardando)* | — | — | — | — |
 | Colômbia x Rep. Dem. do Congo | *(aguardando)* | Colômbia 2 x 0 | *(aguardando)* | — | — | — | — |
 | Inglaterra x Gana | *(aguardando)* | Inglaterra 2 x 0 | *(aguardando)* | — | — | — | — |
@@ -108,9 +108,9 @@ Calibração de desempenho dos times de 0 a 100, onde 0 é a pior nota e 100 a m
 
 | Critério | Acertos | Total | **%** |
 | -------- | :-----: | :---: | :---: |
-| Acerto de Resultado (V/E/D) | 22 | 41 | **54%** |
-| Acerto de Gols (por time) | 27 | 82 | **33%** |
-| Placar Exato (cravado) | 2 | 41 | **5%** |
+| Acerto de Resultado (V/E/D) | 25 | 44 | **57%** |
+| Acerto de Gols (por time) | 29 | 88 | **33%** |
+| Placar Exato (cravado) | 3 | 44 | **7%** |
 
 > **Metodologia:**
 > - **Acerto de Resultado**: acertou se o time vencedor (ou empate) coincide com o palpite.
