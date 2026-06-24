@@ -114,4 +114,26 @@ Clima, altitude, calor extremo e país de origem do árbitro (tolerância a falt
 - NUNCA derive o placar exato só da capacidade ofensiva — use a interação xG × xGA ajustada (seção 4)
 - SEMPRE calcule λ_A e λ_B explicitamente e liste os placares mais prováveis por Poisson
 - Ajuste proporcionalmente o λ ao confirmar desfalques
-- O palpite final deve ser um **placar exato** com porcentagem de confiabilidade do resultado e do placar
+- O palpite final deve ser um **placar exato** com porcentagem de confiabilidade do resultado e do placar nos moldes `<time_1> <gols> X <gols> <time_2>
+
+### Correção de viés obrigatória
+
+Antes de definir o placar final, compare o histórico de palpites do README.
+
+Se houver padrão de subestimação dos gols dos favoritos:
+
+- aumentar λ do favorito em 10% a 25%
+- aumentar a probabilidade de placares
+- reduzir peso de 1x0 e 2x0
+
+NUNCA utilizar a Poisson bruta como decisão final.
+
+Após gerar os placares mais prováveis, recalibrar os λ utilizando:
+
+- histórico de erros do README
+- média de gols já observada na Copa
+- diferença de score entre as seleções
+
+e recalcular a distribuição antes de escolher o placar exato.
+
+> Objetivo: corrigir viés histórico observado.

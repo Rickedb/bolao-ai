@@ -97,10 +97,16 @@ Calibração de desempenho dos times de 0 a 100, onde 0 é a pior nota e 100 a m
 | França x Iraque | 22/06 14:00 | França 3 x 0 | **França 3 x 0** | ✅ | ✅ (3) | ✅ (0) | ✅ |
 | Noruega x Senegal | 22/06 17:00 | Noruega 2 x 0 | **Noruega 3 x 2** | ✅ | ❌ (3≠2) | ❌ (2≠0) | ❌ |
 | Jordânia x Argélia | 22/06 17:00 | Argélia 1 x 0 | **Jordânia 1 x 2 Argélia** | ✅ | ❌ (1≠0) | ❌ (2≠1) | ❌ |
-| Portugal x Uzbequistão | *(aguardando)* | Portugal 2 x 0 | *(aguardando)* | — | — | — | — |
+| Portugal x Uzbequistão | 23/06 09:00 | Portugal 2 x 0 | **Portugal 5 x 0** | ✅ | ❌ (5≠2) | ✅ (0) | ❌ |
 | Colômbia x Rep. Dem. do Congo | *(aguardando)* | Colômbia 2 x 0 | *(aguardando)* | — | — | — | — |
-| Inglaterra x Gana | *(aguardando)* | Inglaterra 2 x 0 | *(aguardando)* | — | — | — | — |
+| Inglaterra x Gana | 23/06 13:00 | Inglaterra 2 x 0 | **Inglaterra 0 x 0 Gana** | ❌ | ❌ (0≠2) | ✅ (0) | ❌ |
 | Panamá x Croácia | *(aguardando)* | Croácia 1 x 0 | *(aguardando)* | — | — | — | — |
+| Suíça x Canadá | *(aguardando)* | Suíça 1 x 1 | *(aguardando)* | — | — | — | — |
+| Bósnia e Herzegovina x Catar | *(aguardando)* | Bósnia e Herzegovina 2 x 0 | *(aguardando)* | — | — | — | — |
+| Brasil x Escócia | *(aguardando)* | Brasil 1 x 0 | *(aguardando)* | — | — | — | — |
+| Marrocos x Haiti | *(aguardando)* | Marrocos 2 x 0 | *(aguardando)* | — | — | — | — |
+| México x Tchéquia | *(aguardando)* | México 2 x 0 | *(aguardando)* | — | — | — | — |
+| Coreia do Sul x África do Sul | *(aguardando)* | Coreia do Sul 1 x 0 | *(aguardando)* | — | — | — | — |
 
 ---
 
@@ -108,9 +114,9 @@ Calibração de desempenho dos times de 0 a 100, onde 0 é a pior nota e 100 a m
 
 | Critério | Acertos | Total | **%** |
 | -------- | :-----: | :---: | :---: |
-| Acerto de Resultado (V/E/D) | 25 | 44 | **57%** |
-| Acerto de Gols (por time) | 29 | 88 | **33%** |
-| Placar Exato (cravado) | 3 | 44 | **7%** |
+| Acerto de Resultado (V/E/D) | 26 | 46 | **57%** |
+| Acerto de Gols (por time) | 31 | 92 | **34%** |
+| Placar Exato (cravado) | 3 | 46 | **7%** |
 
 > **Metodologia:**
 > - **Acerto de Resultado**: acertou se o time vencedor (ou empate) coincide com o palpite.
