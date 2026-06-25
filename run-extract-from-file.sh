@@ -41,7 +41,7 @@ for i in "${!urls[@]}"; do
   if [[ "$i" -lt $(( ${#urls[@]} - 1 )) ]]; then
     delay_min=1
     echo "Aguardando $delay_min minuto(s) antes da proxima execucao..."
-    sleep "$(( delay_min * 60 ))"
+    sleep "$(( delay_min * 10 ))"
   fi
 done
 

@@ -4,17 +4,19 @@ Update the README.md "Histórico de Palpites" table with real match results extr
 
 ## Steps
 
-1. Read `README.md` to find all rows in the "Histórico de Palpites" table.
+1. Run `run-extract-from-file.sh` with `links.txt` as argument to extract recent games.
 
-2. Identify rows that contain `*(aguardando)*` — these are games still awaiting real results.
+2. Read `README.md` to find all rows in the "Histórico de Palpites" table.
 
-3. Read `output/rounds/*.md` to extract real match results. Each game section contains a `## Resultado` line in the format:
+3. Identify rows that contain `*(aguardando)*` — these are games still awaiting real results.
+
+4. Read `output/rounds/*.md` to extract real match results. Each game section contains a `## Resultado` line in the format:
    ```
    **Team A N x M Team B**
    ```
    Match this to the game in README.md by team names (be flexible with diacritics / alternate names).
 
-4. For each awaiting game where a real result is now available, compute:
+5. For each awaiting game where a real result is now available, compute:
    - **Acerto Resultado**: ✅ if the predicted winner/draw matches the real winner/draw; ❌ otherwise.
    - **Gols Casa**: ✅ (N) if the predicted home goals equal the real home goals; ❌ (real≠predicted) otherwise.
    - **Gols Fora**: ✅ (N) if the predicted away goals equal the real away goals; ❌ (real≠predicted) otherwise.
@@ -30,16 +32,16 @@ Update the README.md "Histórico de Palpites" table with real match results extr
    - If the predicted winner is the AWAY team, then predicted home goals = second number, away goals = first.
    - For draws, the home team is listed with equal goals.
 
-5. Update the README.md table rows: replace `*(aguardando)*` and the `—` placeholders with actual values.
+6. Update the README.md table rows: replace `*(aguardando)*` and the `—` placeholders with actual values.
 
-6. Recalculate the **Estatísticas** table at the bottom of README.md:
+7. Recalculate the **Estatísticas** table at the bottom of README.md:
    - Count completed games (rows without `*(aguardando)*` after the update).
    - **Acerto de Resultado**: count of ✅ in that column / total completed games.
    - **Acerto de Gols**: count of ✅ across BOTH Gols Casa and Gols Fora columns / (total completed games × 2).
    - **Placar Exato**: count of ✅ in Placar Exato column / total completed games.
    - Format percentages as integers (e.g. `52%`).
 
-7. Write the updated README.md.
+8. Write the updated README.md.
 
 ## Notes
 
