@@ -103,16 +103,20 @@ Calibração de desempenho dos times de 0 a 100, onde 0 é a pior nota e 100 a m
 | Panamá x Croácia | 23/06 19:00 | Croácia 1 x 0 | **Panamá 0 x 1 Croácia** | ✅ | ✅ (0) | ✅ (1) | ✅ |
 | Suíça x Canadá | 24/06 12:00 | Suíça 1 x 1 | **Suíça 2 x 1 Canadá** | ❌ | ❌ (2≠1) | ✅ (1) | ❌ |
 | Bósnia e Herzegovina x Catar | 24/06 12:00 | Bósnia e Herzegovina 2 x 0 | **Bósnia e Herzegovina 3 x 1 Catar** | ✅ | ❌ (3≠2) | ❌ (1≠0) | ❌ |
-| Brasil x Escócia | *(aguardando)* | Brasil 1 x 0 | *(aguardando)* | — | — | — | — |
-| Marrocos x Haiti | *(aguardando)* | Marrocos 2 x 0 | *(aguardando)* | — | — | — | — |
-| México x Tchéquia | *(aguardando)* | México 2 x 0 | *(aguardando)* | — | — | — | — |
-| Coreia do Sul x África do Sul | *(aguardando)* | Coreia do Sul 1 x 0 | *(aguardando)* | — | — | — | — |
-| Costa do Marfim x Curaçao | *(aguardando)* | Costa do Marfim 3 x 0 | *(aguardando)* | — | — | — | — |
-| Alemanha x Equador | *(aguardando)* | Alemanha 3 x 0 | *(aguardando)* | — | — | — | — |
-| Japão x Suécia | *(aguardando)* | Japão 2 x 1 | *(aguardando)* | — | — | — | — |
-| Holanda x Tunísia | *(aguardando)* | Holanda 3 x 0 | *(aguardando)* | — | — | — | — |
+| Brasil x Escócia | 24/06 15:00 | Brasil 1 x 0 | **Brasil 3 x 0 Escócia** | ✅ | ❌ (3≠1) | ✅ (0) | ❌ |
+| Marrocos x Haiti | 24/06 15:00 | Marrocos 2 x 0 | **Marrocos 4 x 2 Haiti** | ✅ | ❌ (4≠2) | ❌ (2≠0) | ❌ |
+| México x Tchéquia | 24/06 16:00 | México 2 x 0 | **México 3 x 0 Tchéquia** | ✅ | ❌ (3≠2) | ✅ (0) | ❌ |
+| Coreia do Sul x África do Sul | 24/06 16:00 | Coreia do Sul 1 x 0 | **Coreia do Sul 0 x 1 África do Sul** | ❌ | ❌ (0≠1) | ❌ (1≠0) | ❌ |
+| Costa do Marfim x Curaçao | 25/06 13:00 | Costa do Marfim 3 x 0 | **Costa do Marfim 2 x 0 Curaçao** | ✅ | ❌ (2≠3) | ✅ (0) | ❌ |
+| Alemanha x Equador | 25/06 13:00 | Alemanha 3 x 0 | **Alemanha 1 x 2 Equador** | ❌ | ❌ (1≠3) | ❌ (2≠0) | ❌ |
+| Japão x Suécia | 25/06 15:00 | Japão 2 x 1 | **Japão 1 x 1 Suécia** | ❌ | ❌ (1≠2) | ✅ (1) | ❌ |
+| Holanda x Tunísia | 25/06 15:00 | Holanda 3 x 0 | **Holanda 3 x 1 Tunísia** | ✅ | ✅ (3) | ❌ (1≠0) | ❌ |
 | Turquia x EUA | *(aguardando)* | EUA 2 x 1 | *(aguardando)* | — | — | — | — |
 | Austrália x Paraguai | *(aguardando)* | Austrália 2 x 1 | *(aguardando)* | — | — | — | — |
+| Noruega x França | *(aguardando)* | França 2 x 1 | *(aguardando)* | — | — | — | — |
+| Senegal x Iraque | *(aguardando)* | Senegal 2 x 0 | *(aguardando)* | — | — | — | — |
+| Cabo Verde x Arábia Saudita | *(aguardando)* | Cabo Verde 1 x 0 | *(aguardando)* | — | — | — | — |
+| Uruguai x Espanha | *(aguardando)* | Espanha 2 x 1 | *(aguardando)* | — | — | — | — |
 
 ---
 
@@ -120,9 +124,9 @@ Calibração de desempenho dos times de 0 a 100, onde 0 é a pior nota e 100 a m
 
 | Critério | Acertos | Total | **%** |
 | -------- | :-----: | :---: | :---: |
-| Acerto de Resultado (V/E/D) | 29 | 50 | **58%** |
-| Acerto de Gols (por time) | 35 | 100 | **35%** |
-| Placar Exato (cravado) | 4 | 50 | **8%** |
+| Acerto de Resultado (V/E/D) | 34 | 58 | **59%** |
+| Acerto de Gols (por time) | 40 | 116 | **34%** |
+| Placar Exato (cravado) | 4 | 58 | **7%** |
 
 > **Metodologia:**
 > - **Acerto de Resultado**: acertou se o time vencedor (ou empate) coincide com o palpite.
