@@ -111,12 +111,21 @@ Calibração de desempenho dos times de 0 a 100, onde 0 é a pior nota e 100 a m
 | Alemanha x Equador | 25/06 13:00 | Alemanha 3 x 0 | **Alemanha 1 x 2 Equador** | ❌ | ❌ (1≠3) | ❌ (2≠0) | ❌ |
 | Japão x Suécia | 25/06 15:00 | Japão 2 x 1 | **Japão 1 x 1 Suécia** | ❌ | ❌ (1≠2) | ✅ (1) | ❌ |
 | Holanda x Tunísia | 25/06 15:00 | Holanda 3 x 0 | **Holanda 3 x 1 Tunísia** | ✅ | ✅ (3) | ❌ (1≠0) | ❌ |
-| Turquia x EUA | *(aguardando)* | EUA 2 x 1 | *(aguardando)* | — | — | — | — |
-| Austrália x Paraguai | *(aguardando)* | Austrália 2 x 1 | *(aguardando)* | — | — | — | — |
-| Noruega x França | *(aguardando)* | França 2 x 1 | *(aguardando)* | — | — | — | — |
-| Senegal x Iraque | *(aguardando)* | Senegal 2 x 0 | *(aguardando)* | — | — | — | — |
+| Turquia x EUA | 25/06 16:00 | EUA 2 x 1 | **Turquia 3 x 2 EUA** | ❌ | ❌ (3≠1) | ✅ (2) | ❌ |
+| Austrália x Paraguai | 25/06 16:00 | Austrália 2 x 1 | **Austrália 0 x 0 Paraguai** | ❌ | ❌ (0≠2) | ❌ (0≠1) | ❌ |
+| Noruega x França | 26/06 12:00 | França 2 x 1 | **Noruega 1 x 4 França** | ✅ | ✅ (1) | ❌ (4≠2) | ❌ |
+| Senegal x Iraque | 26/06 12:00 | Senegal 2 x 0 | **Senegal 5 x 0 Iraque** | ✅ | ❌ (5≠2) | ✅ (0) | ❌ |
 | Cabo Verde x Arábia Saudita | *(aguardando)* | Cabo Verde 1 x 0 | *(aguardando)* | — | — | — | — |
 | Uruguai x Espanha | *(aguardando)* | Espanha 2 x 1 | *(aguardando)* | — | — | — | — |
+| Egito x Irã | *(aguardando)* | Egito 2 x 1 | *(aguardando)* | — | — | — | — |
+| Nova Zelândia x Bélgica | *(aguardando)* | Bélgica 3 x 0 | *(aguardando)* | — | — | — | — |
+| Panamá x Inglaterra | *(aguardando)* | Inglaterra 3 x 0 | *(aguardando)* | — | — | — | — |
+| Croácia x Gana | *(aguardando)* | Croácia 2 x 0 | *(aguardando)* | — | — | — | — |
+| Colômbia x Portugal | *(aguardando)* | Portugal 2 x 1 | *(aguardando)* | — | — | — | — |
+| Rep. Dem. do Congo x Uzbequistão | *(aguardando)* | Rep. Dem. do Congo 1 x 0 | *(aguardando)* | — | — | — | — |
+| Argélia x Áustria | *(aguardando)* | Áustria 2 x 0 | *(aguardando)* | — | — | — | — |
+| Argentina x Jordânia | *(aguardando)* | Argentina 3 x 0 | *(aguardando)* | — | — | — | — |
+| África do Sul x Canadá | *(aguardando)* | Canadá 1 x 0 | *(aguardando)* | — | — | — | — |
 
 ---
 
@@ -124,9 +133,9 @@ Calibração de desempenho dos times de 0 a 100, onde 0 é a pior nota e 100 a m
 
 | Critério | Acertos | Total | **%** |
 | -------- | :-----: | :---: | :---: |
-| Acerto de Resultado (V/E/D) | 34 | 58 | **59%** |
-| Acerto de Gols (por time) | 40 | 116 | **34%** |
-| Placar Exato (cravado) | 4 | 58 | **7%** |
+| Acerto de Resultado (V/E/D) | 36 | 62 | **58%** |
+| Acerto de Gols (por time) | 43 | 124 | **35%** |
+| Placar Exato (cravado) | 4 | 62 | **6%** |
 
 > **Metodologia:**
 > - **Acerto de Resultado**: acertou se o time vencedor (ou empate) coincide com o palpite.
