@@ -115,16 +115,16 @@ Calibração de desempenho dos times de 0 a 100, onde 0 é a pior nota e 100 a m
 | Austrália x Paraguai | 25/06 16:00 | Austrália 2 x 1 | **Austrália 0 x 0 Paraguai** | ❌ | ❌ (0≠2) | ❌ (0≠1) | ❌ |
 | Noruega x França | 26/06 12:00 | França 2 x 1 | **Noruega 1 x 4 França** | ✅ | ✅ (1) | ❌ (4≠2) | ❌ |
 | Senegal x Iraque | 26/06 12:00 | Senegal 2 x 0 | **Senegal 5 x 0 Iraque** | ✅ | ❌ (5≠2) | ✅ (0) | ❌ |
-| Cabo Verde x Arábia Saudita | *(aguardando)* | Cabo Verde 1 x 0 | *(aguardando)* | — | — | — | — |
-| Uruguai x Espanha | *(aguardando)* | Espanha 2 x 1 | *(aguardando)* | — | — | — | — |
-| Egito x Irã | *(aguardando)* | Egito 2 x 1 | *(aguardando)* | — | — | — | — |
-| Nova Zelândia x Bélgica | *(aguardando)* | Bélgica 3 x 0 | *(aguardando)* | — | — | — | — |
-| Panamá x Inglaterra | *(aguardando)* | Inglaterra 3 x 0 | *(aguardando)* | — | — | — | — |
-| Croácia x Gana | *(aguardando)* | Croácia 2 x 0 | *(aguardando)* | — | — | — | — |
-| Colômbia x Portugal | *(aguardando)* | Portugal 2 x 1 | *(aguardando)* | — | — | — | — |
-| Rep. Dem. do Congo x Uzbequistão | *(aguardando)* | Rep. Dem. do Congo 1 x 0 | *(aguardando)* | — | — | — | — |
-| Argélia x Áustria | *(aguardando)* | Áustria 2 x 0 | *(aguardando)* | — | — | — | — |
-| Argentina x Jordânia | *(aguardando)* | Argentina 3 x 0 | *(aguardando)* | — | — | — | — |
+| Cabo Verde x Arábia Saudita | *(aguardando)* | Cabo Verde 1 x 0 | **Cabo Verde 0 x 0 Arábia Saudita** | ❌ | ❌ (0≠1) | ✅ (0) | ❌ |
+| Uruguai x Espanha | *(aguardando)* | Espanha 2 x 1 | **Uruguai 0 x 1 Espanha** | ✅ | ❌ (0≠1) | ❌ (1≠2) | ❌ |
+| Egito x Irã | *(aguardando)* | Egito 2 x 1 | **Egito 1 x 1 Irã** | ❌ | ❌ (1≠2) | ✅ (1) | ❌ |
+| Nova Zelândia x Bélgica | *(aguardando)* | Bélgica 3 x 0 | **Nova Zelândia 1 x 5 Bélgica** | ✅ | ❌ (1≠0) | ❌ (5≠3) | ❌ |
+| Panamá x Inglaterra | *(aguardando)* | Inglaterra 3 x 0 | **Panamá 0 x 2 Inglaterra** | ✅ | ✅ (0) | ❌ (2≠3) | ❌ |
+| Croácia x Gana | *(aguardando)* | Croácia 2 x 0 | **Croácia 2 x 1 Gana** | ✅ | ✅ (2) | ❌ (1≠0) | ❌ |
+| Colômbia x Portugal | *(aguardando)* | Portugal 2 x 1 | **Colômbia 0 x 0 Portugal** | ❌ | ❌ (0≠1) | ❌ (0≠2) | ❌ |
+| Rep. Dem. do Congo x Uzbequistão | *(aguardando)* | Rep. Dem. do Congo 1 x 0 | **Rep. Dem. do Congo 3 x 1 Uzbequistão** | ✅ | ❌ (3≠1) | ❌ (1≠0) | ❌ |
+| Argélia x Áustria | *(aguardando)* | Áustria 2 x 0 | **Argélia 3 x 3 Áustria** | ❌ | ❌ (3≠0) | ❌ (3≠2) | ❌ |
+| Argentina x Jordânia | *(aguardando)* | Argentina 3 x 0 | **Argentina 3 x 1 Jordânia** | ✅ | ✅ (3) | ❌ (1≠0) | ❌ |
 | África do Sul x Canadá | *(aguardando)* | Canadá 1 x 0 | *(aguardando)* | — | — | — | — |
 
 ---
@@ -133,9 +133,9 @@ Calibração de desempenho dos times de 0 a 100, onde 0 é a pior nota e 100 a m
 
 | Critério | Acertos | Total | **%** |
 | -------- | :-----: | :---: | :---: |
-| Acerto de Resultado (V/E/D) | 36 | 62 | **58%** |
-| Acerto de Gols (por time) | 43 | 124 | **35%** |
-| Placar Exato (cravado) | 4 | 62 | **6%** |
+| Acerto de Resultado (V/E/D) | 42 | 72 | **58%** |
+| Acerto de Gols (por time) | 48 | 144 | **33%** |
+| Placar Exato (cravado) | 4 | 72 | **6%** |
 
 > **Metodologia:**
 > - **Acerto de Resultado**: acertou se o time vencedor (ou empate) coincide com o palpite.
