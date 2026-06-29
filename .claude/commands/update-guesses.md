@@ -10,7 +10,7 @@ Update the README.md "Histórico de Palpites" table with real match results extr
 
 3. Identify rows that contain `*(aguardando)*` — these are games still awaiting real results.
 
-4. Read `output/rounds/*.md` to extract real match results. Each game section contains a `## Resultado` line in the format:
+4. Read **all files** in `output/rounds/` (e.g. `primeira-fase.md`, `segundas-de-final.md`, and any others present) to extract real match results. Use `ls output/rounds/` first to discover all files, then read each one. Each game section contains a `## Resultado` line in the format:
    ```
    **Team A N x M Team B**
    ```

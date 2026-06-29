@@ -125,7 +125,16 @@ Calibração de desempenho dos times de 0 a 100, onde 0 é a pior nota e 100 a m
 | Rep. Dem. do Congo x Uzbequistão | *(aguardando)* | Rep. Dem. do Congo 1 x 0 | **Rep. Dem. do Congo 3 x 1 Uzbequistão** | ✅ | ❌ (3≠1) | ❌ (1≠0) | ❌ |
 | Argélia x Áustria | *(aguardando)* | Áustria 2 x 0 | **Argélia 3 x 3 Áustria** | ❌ | ❌ (3≠0) | ❌ (3≠2) | ❌ |
 | Argentina x Jordânia | *(aguardando)* | Argentina 3 x 0 | **Argentina 3 x 1 Jordânia** | ✅ | ✅ (3) | ❌ (1≠0) | ❌ |
-| África do Sul x Canadá | *(aguardando)* | Canadá 1 x 0 | *(aguardando)* | — | — | — | — |
+| África do Sul x Canadá | *(aguardando)* | Canadá 1 x 0 | **África do Sul 0 x 1 Canadá** | ✅ | ✅ (0) | ✅ (1) | ✅ |
+| Brasil x Japão | *(aguardando)* | Brasil 2 x 1 | *(aguardando)* | — | — | — | — |
+| Alemanha x Paraguai | *(aguardando)* | Alemanha 3 x 0 | *(aguardando)* | — | — | — | — |
+| Holanda x Marrocos | *(aguardando)* | Holanda 2 x 0 | *(aguardando)* | — | — | — | — |
+| Costa do Marfim x Noruega | *(aguardando)* | Noruega 2 x 1 | *(aguardando)* | — | — | — | — |
+| França x Suécia | *(aguardando)* | França 3 x 1 | *(aguardando)* | — | — | — | — |
+| México x Equador | *(aguardando)* | México 1 x 0 | *(aguardando)* | — | — | — | — |
+| Inglaterra x Rep. Dem. do Congo | *(aguardando)* | Inglaterra 3 x 0 | *(aguardando)* | — | — | — | — |
+| Bélgica x Senegal | *(aguardando)* | Bélgica 2 x 0 | *(aguardando)* | — | — | — | — |
+| EUA x Bósnia e Herzegovina | *(aguardando)* | EUA 3 x 0 | *(aguardando)* | — | — | — | — |
 
 ---
 
@@ -133,9 +142,9 @@ Calibração de desempenho dos times de 0 a 100, onde 0 é a pior nota e 100 a m
 
 | Critério | Acertos | Total | **%** |
 | -------- | :-----: | :---: | :---: |
-| Acerto de Resultado (V/E/D) | 42 | 72 | **58%** |
-| Acerto de Gols (por time) | 48 | 144 | **33%** |
-| Placar Exato (cravado) | 4 | 72 | **6%** |
+| Acerto de Resultado (V/E/D) | 43 | 73 | **59%** |
+| Acerto de Gols (por time) | 50 | 146 | **34%** |
+| Placar Exato (cravado) | 5 | 73 | **7%** |
 
 > **Metodologia:**
 > - **Acerto de Resultado**: acertou se o time vencedor (ou empate) coincide com o palpite.
